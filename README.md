@@ -27,8 +27,8 @@ format of each one and reads out what the number says about the entity.
 ### Installation
 
 ```bash
-git clone <your-repo-url>
-cd <your-project-folder>
+git clone https://github.com/MayankArya123/cin-llpin-verification-tool.git
+cd  filesure-cin-checker
 npm install
 ```
 

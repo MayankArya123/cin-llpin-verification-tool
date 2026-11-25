@@ -104,7 +104,7 @@ export default function Home() {
       <div className="mx-auto max-w-5xl px-4 pb-24 pt-10 sm:px-6 sm:pt-16">
         <header className="max-w-2xl">
           <h1 className="font-[family-name:var(--font-serif)] text-[2rem] font-semibold leading-tight tracking-tight bg-gradient-to-r from-indigo-600 via-violet-600 to-fuchsia-500 bg-clip-text text-transparent sm:text-5xl">
-            Check company and LLP identification numbers
+            Verify company CIN and LLP identification numbers
           </h1>
           <p className="mt-4 text-base leading-relaxed text-slate-600 sm:text-lg">
             Paste any number of CINs and LLPINs. We check the format and read
@@ -211,8 +211,7 @@ export default function Home() {
               ))}
             </dl>
             <p className="mt-6 text-sm text-[#4B5A6D]">
-              LLPINs use a shorter pattern, such as AAA-1234. Paste both kinds
-              together if you like.
+              LLPINs use a shorter pattern, such as AAA-1234.
             </p>
           </section>
         )}
