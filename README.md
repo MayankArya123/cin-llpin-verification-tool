@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# CIN & LLPIN Checker
+
+Paste any number of Corporate Identification Numbers (CIN) and Limited
+Liability Partnership Identification Numbers (LLPIN). The app checks the
+format of each one and reads out what the number says about the entity.
+
+## Features
+
+- Bulk input: check many identifiers at once
+- Format validation for CINs and LLPINs
+- Plain-language breakdown of each identifier
+- Responsive UI built with Tailwind CSS
+
+## Tech Stack
+
+- Next.js
+- React
+- Tailwind CSS
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 18 or later
+- npm, yarn, or pnpm
+
+### Installation
+
+```bash
+git clone <your-repo-url>
+cd <your-project-folder>
+npm install
+```
+
+### Run locally
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Build for production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+## Scripts
 
-To learn more about Next.js, take a look at the following resources:
+| Command                | Description                    |
+| ---------------------- | ------------------------------ |
+| `npm run dev`          | Start the development server   |
+| `npm run build`        | Create a production build      |
+| `npm start`            | Run the production build       |
+| `npm run format`       | Format all files with Prettier |
+| `npm run format:check` | Check formatting without edits |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Usage
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Paste one or more CINs or LLPINs, one per line.
+2. Click **Check identifiers**.
+3. Review the format check and the decoded details for each entry.
 
-## Deploy on Vercel
+## Project Structure
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
+src/
+  app/          # Pages and layouts
+  lib/          # Validation and parsing logic
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Disclaimer
+
+This tool checks identifier format and decodes the information embedded in
+the number. It does not confirm that a company or LLP is currently registered
+or in good standing. Verify against official MCA records.
